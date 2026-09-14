@@ -30,8 +30,6 @@ public class ParseFile {
             System.out.println(n);
         }
 
-
-
         di.finishImport();
     }
 }

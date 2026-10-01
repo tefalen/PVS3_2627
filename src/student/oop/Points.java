@@ -20,17 +20,57 @@ public class Points {
             z = DEAFAULT_Z;
         }
 
-
-
         public Point(double x, double y, double z) {
             name = "point " + PointsCreated;
             this.x = x;
             this.y = y;
-            this.z = z;
+            z = DEAFAULT_Z;
             Point.PointsCreated ++;
+        }
+        @Override
+        public String toString() {
+            return name + "(" + x + ", " + y + ", " + z + ")";
+        }
 
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public double getX() {
+            return x;
+        }
+
+        public void setX(double x) {
+            this.x = x;
+        }
+
+        public double getY() {
+            return y;
+        }
+
+        public void setY(double y) {
+            this.y = y;
+        }
+
+        public double getZ() {
+            return z;
+        }
+
+        public void setZ(double z) {
+            this.z = z;
+        }
+
+        public static int getPointsCreated() {
+            return PointsCreated;
         }
 
 
     }
+
+
 }
+

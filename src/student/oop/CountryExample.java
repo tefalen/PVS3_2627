@@ -14,5 +14,6 @@ public class CountryExample {
             String[] split =  Line.split(";");
             Country n = new Country(split[0], split[1], Long.parseLong(split[2]), Double.parseDouble(split[3]));
         }
+        di.finishImport();
     }
 }
